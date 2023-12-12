@@ -1,0 +1,185 @@
+{
+	"info": {
+		"_postman_id": "c9cbbc4b-c18f-4d05-a7d4-0ba731d34bcb",
+		"name": "Comprehensive_Assignment",
+		"description": "StartFragment\n\nCreate a collection in Postman and create positive and negative cases for below API. And use get method to get valid responses.\n\nVerify the HTTP Status Codes, while running Positive and Negative Test Cases.\n\nTo validate the HTTP Status Codes and responses use Assertions concept in PostMan https://restcountries.com/v3.1/name/India\n\nEndFragment",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "5333985"
+	},
+	"item": [
+		{
+			"name": "Positive case",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"pm.test(\"Status code is 200\", function () {\r",
+							"pm.response.to.have.status(200);\r",
+							"});"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true,
+				"disabledSystemHeaders": {
+					"content-length": true,
+					"host": true,
+					"user-agent": true,
+					"accept": true,
+					"accept-encoding": true,
+					"connection": true
+				}
+			},
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Host",
+						"value": "restcountries.com",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://restcountries.com/v3.1/name/India",
+					"protocol": "https",
+					"host": [
+						"restcountries",
+						"com"
+					],
+					"path": [
+						"v3.1",
+						"name",
+						"India"
+					],
+					"query": [
+						{
+							"key": "Host",
+							"value": "qbdtcardprocessing-e2e.payments.intuit.com",
+							"disabled": true
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/x-www-form-urlencoded; charset=UTF-8",
+							"disabled": true
+						},
+						{
+							"key": "User-Agent",
+							"value": "Mozilla/5.0 (Windows NT 10.0; QuickBooks/34.0/R1/BEL) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/109.0.5414.87 Safari/537.36 Chromium/109.0.5414.87",
+							"disabled": true
+						},
+						{
+							"key": "Origin",
+							"value": "https://qbdtcardprocessing-e2e.payments.intuit.com",
+							"disabled": true
+						},
+						{
+							"key": "Referer",
+							"value": "https://qbdtcardprocessing-e2e.payments.intuit.com/j/mastxn/entry?authid=9130361425374456&type=0&dollars=10&cents=0&serverStore=true&customerID=80000001-1694151420&IsOverlayBrowser=y&storeCardConsentFeature=true&customerAvailable=true&InvoiceDetails=True",
+							"disabled": true
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Negative case",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"pm.test(\"Status code is 200\", function () {\r",
+							"pm.response.to.have.status(200);\r",
+							"});"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true,
+				"disabledSystemHeaders": {
+					"content-length": true,
+					"host": true,
+					"user-agent": true,
+					"accept": true,
+					"accept-encoding": true,
+					"connection": true
+				}
+			},
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Host",
+						"value": "restcountries.com",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://restcountries.com/v3.1/name/India",
+					"protocol": "https",
+					"host": [
+						"restcountries",
+						"com"
+					],
+					"path": [
+						"v3.1",
+						"name",
+						"India"
+					],
+					"query": [
+						{
+							"key": "Host",
+							"value": "qbdtcardprocessing-e2e.payments.intuit.com",
+							"disabled": true
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/x-www-form-urlencoded; charset=UTF-8",
+							"disabled": true
+						},
+						{
+							"key": "User-Agent",
+							"value": "Mozilla/5.0 (Windows NT 10.0; QuickBooks/34.0/R1/BEL) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/109.0.5414.87 Safari/537.36 Chromium/109.0.5414.87",
+							"disabled": true
+						},
+						{
+							"key": "Origin",
+							"value": "https://qbdtcardprocessing-e2e.payments.intuit.com",
+							"disabled": true
+						},
+						{
+							"key": "Referer",
+							"value": "https://qbdtcardprocessing-e2e.payments.intuit.com/j/mastxn/entry?authid=9130361425374456&type=0&dollars=10&cents=0&serverStore=true&customerID=80000001-1694151420&IsOverlayBrowser=y&storeCardConsentFeature=true&customerAvailable=true&InvoiceDetails=True",
+							"disabled": true
+						}
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
