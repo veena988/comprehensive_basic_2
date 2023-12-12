@@ -1,3 +1,6 @@
+
+**Note** **ComprehensiveAssignment.docx contains all the screenshot and codes**
+
 # comprehensive_basic_2
 1.Assignment 1 :
 
