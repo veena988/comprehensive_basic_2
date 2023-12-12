@@ -61,7 +61,7 @@ Create a Maven Project and implement all the programs in Maven Project and add A
 
    Create a branch name as comprehensive_basic_2 in GitHub and implement all the above programs in that branch and push the code into the same branch. Share the GitHub details to evaluate. Write the git commands accordingly.
    
-**path :** https://github.com/veena988/comprehensive_basic_2
+**path :** https://github.com/veena988/comprehensive_basic_2/tree/master
 
 8. Assignment 8:
    
